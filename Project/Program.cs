@@ -7,14 +7,17 @@ namespace Project
     {
         public static void Main(string[] args)
         {
-            string x = "1.9";
-
+            string str = "5,3";
+            double num = 5;
+            
+            Console.WriteLine(str + num);
             NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
             {
-                NumberDecimalSeparator = "."
+                NumberDecimalSeparator = ","
             };
-            Console.WriteLine(Convert.ToDouble(x, numberFormatInfo));
             
+            double numFromStr = double.Parse(str, numberFormatInfo);
+            Console.WriteLine(num + numFromStr);
         }
     }
 }
