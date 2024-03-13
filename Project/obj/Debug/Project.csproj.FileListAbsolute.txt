@@ -1,0 +1,6 @@
+C:\Users\dkhnykin\RiderProjects\ConsoleApplication\Project\bin\Debug\Project.exe
+C:\Users\dkhnykin\RiderProjects\ConsoleApplication\Project\bin\Debug\Project.pdb
+C:\Users\dkhnykin\RiderProjects\ConsoleApplication\Project\obj\Debug\Project.csproj.AssemblyReference.cache
+C:\Users\dkhnykin\RiderProjects\ConsoleApplication\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+C:\Users\dkhnykin\RiderProjects\ConsoleApplication\Project\obj\Debug\Project.exe
+C:\Users\dkhnykin\RiderProjects\ConsoleApplication\Project\obj\Debug\Project.pdb
