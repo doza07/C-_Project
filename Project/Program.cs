@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Security.AccessControl;
+using System.Globalization;
 
 namespace Project
 {
@@ -7,11 +7,14 @@ namespace Project
     {
         public static void Main(string[] args)
         {
-            string sayHello = "Hello";
-            Console.WriteLine(sayHello + "!" + " Enter your name:");
+            string x = "1.9";
 
-            string name = Console.ReadLine();
-            Console.WriteLine(sayHello + " " + name);      
+            NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
+            {
+                NumberDecimalSeparator = "."
+            };
+            Console.WriteLine(Convert.ToDouble(x, numberFormatInfo));
+            
         }
     }
 }
