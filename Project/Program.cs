@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.AccessControl;
 
 namespace Project
 {
@@ -6,7 +7,11 @@ namespace Project
     {
         public static void Main(string[] args)
         {
-            Console.Write("Hello");
+            string sayHello = "Hello";
+            Console.WriteLine(sayHello + "!" + " Enter your name:");
+
+            string name = Console.ReadLine();
+            Console.WriteLine(sayHello + " " + name);      
         }
     }
 }
