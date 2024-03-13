@@ -7,17 +7,19 @@ namespace Project
     {
         public static void Main(string[] args)
         {
-            string str = "5,3";
-            double num = 5;
+            string str = "5egfw";
+            int a;
             
-            Console.WriteLine(str + num);
-            NumberFormatInfo numberFormatInfo = new NumberFormatInfo()
+            bool result = int.TryParse(str, out a);
+
+            if (result)
             {
-                NumberDecimalSeparator = ","
-            };
-            
-            double numFromStr = double.Parse(str, numberFormatInfo);
-            Console.WriteLine(num + numFromStr);
+                Console.WriteLine("Done parse");
+            }
+            else
+            {
+                Console.WriteLine("Error parse!");
+            }
         }
     }
 }
