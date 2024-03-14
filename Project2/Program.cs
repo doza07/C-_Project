@@ -5,13 +5,15 @@ namespace Project2
 {
     internal class Program
     {
-        public static int Sum(int a, int b)
+        public static int Sum(ref int a, ref int b)
         {
             return a + b;
         }
         public static void Main(string[] args)
         {
-            Console.WriteLine(Sum(2, 6));
+            int a = 2;
+            int b = 6;
+            Console.WriteLine(Sum(ref a, ref b));
         }
     }
 }
