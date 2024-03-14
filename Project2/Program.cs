@@ -6,7 +6,14 @@ namespace Project2
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello from Project 2");
+            
+            Program program = new Program();
+            Console.WriteLine(program.Plus(2, 6));
+        }
+
+        public int Plus(int a, int b)
+        {
+            return a + b;
         }
     }
 }
