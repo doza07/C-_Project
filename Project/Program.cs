@@ -7,7 +7,8 @@ namespace Project
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello from Project");
+            string str = null;
+            Console.WriteLine(str ?? "No Data");
         }
     }
 }
