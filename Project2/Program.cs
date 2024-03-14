@@ -4,16 +4,13 @@ namespace Project2
 {
     internal class Program
     {
-        public static void Main(string[] args)
-        {
-            
-            Program program = new Program();
-            Console.WriteLine(program.Plus(2, 6));
-        }
-
-        public int Plus(int a, int b)
+        public static int Sum(int a, int b)
         {
             return a + b;
+        }
+        public static void Main(string[] args)
+        {
+            Console.WriteLine(Sum(2, 6));
         }
     }
 }
